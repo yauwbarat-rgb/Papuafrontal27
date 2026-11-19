@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Ocean Merge - Bonus & Referral</title>
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ocean Merge - Bonus & Referral">
+    <meta property="og:description" content="Download Ocean Merge dan dapatkan bonus referral.">
+    <meta property="og:image" content="https://cdn.imagetourls.com/uploads/tyImg/BtHVnNUN.jpg">
+
+    <style>
+        :root {
+            --rem: calc(100vmin * 0.0426666667);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: #18c4f8;
+            background-image: url('https://cdn.imagetourls.com/uploads/tyImg/BtHVnNUN.jpg');
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .main {
+            position: relative;
+            background-image: url('https://cdn.imagetourls.com/uploads/tyImg/BtHVnNUN.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center 17rem;
+            padding-bottom: 6rem;
+        }
+
+        .main::after {
+            background-image: url('https://cdn.imagetourls.com/uploads/tyImg/BtHVnNUN.jpg');
+            background-size: 100%;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .main > div,
+        .main > header {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* HEADER */
+
+        .header {
+            position: relative;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 3rem;
+        }
+
+        .header-content > .title {
+            font-size: 1.6875rem;
+            font-weight: 900;
+            -webkit-text-stroke: 4px #004f8f;
+            color: #004f8f;
+            position: relative;
+        }
+
+        .header-content > .title::after {
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to bottom, #fffeda, #fff659);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            -webkit-text-stroke: 0;
+        }
+
+        .header-content > .dialog {
+            background-image: url('../images/subscript_bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 11.1875rem;
+            height: 3.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .dialog-content {
+            display: flex;
+            align-items: center;
+            height: 2.75rem;
+            justify-content: center;
+        }
+
+        .dialog-content > .rp {
+            font-size: 1.875rem;
+            font-weight: 900;
+            color: #aa4000;
+        }
+
+        /* DOWNLOAD */
+
+        .invite {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5rem;
+        }
+
+        .invite-action {
+            display: flex;
+            width: 18rem;
+            height: 4.5625rem;
+            background: linear-gradient(180deg, #2196f3, #075edb);
+            border: 3px solid #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 0 #064a9f, 0 8px 18px rgba(0,0,0,.25);
+            justify-content: center;
+            align-items: center;
+            transition: transform .15s;
+        }
+
+        .invite-action:hover {
+            transform: scale(1.03);
+        }
+
+        .invite-action:active {
+            transform: scale(.97);
+        }
+
+        .invite-action .text {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 2px 3px 0 #064a9f;
+        }
+
+        .invite-content {
+            font-size: .875rem;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 1rem;
+            gap: .35rem;
+        }
+
+        .primary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            flex-wrap: wrap;
+        }
+
+        .primary .code {
+            font-size: .9375rem;
+            font-weight: 700;
+            background: rgba(255,255,255,.2);
+            padding: 3px 8px;
+            border-radius: 6px;
+        }
+
+        .copy-btn {
+            border: none;
+            border-radius: 6px;
+            background: #fff;
+            color: #006fd6;
+            font-weight: 700;
+            padding: 5px 9px;
+            cursor: pointer;
+        }
+
+        /* CHALLENGE */
+
+        .challenge {
+            margin: 1.25rem 0.9375rem;
+            padding: 1.25rem;
+            background: linear-gradient(135deg, #ffffff, #eaf8ff);
+            border: 2px solid #078ec7;
+            border-radius: 1.25rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,.18);
+            color: #333;
+            text-align: center;
+        }
+
+        .challenge h2 {
+            margin: 0 0 .4rem;
+            color: #0072bb;
+            font-size: 1.25rem;
+        }
+
+        .challenge .bonus {
+            color: #e60000;
+            font-size: 1.7rem;
+            font-weight: 900;
+            margin: .4rem 0;
+        }
+
+        .challenge p {
+            margin: .4rem 0 1rem;
+            font-size: .8rem;
+        }
+
+        .platforms {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: .75rem;
+        }
+
+        .platform {
+            min-height: 115px;
+            padding: .8rem .5rem;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 800;
+            box-shadow: 0 4px 8px rgba(0,0,0,.15);
+        }
+
+        .facebook {
+            background: linear-gradient(135deg, #1877f2, #0757bd);
+        }
+
+        .instagram {
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+        }
+
+        .platform-icon {
+            font-size: 2rem;
+            margin-bottom: .25rem;
+        }
+
+        .platform-name {
+            font-size: .95rem;
+        }
+
+        .platform-desc {
+            font-size: .65rem;
+            font-weight: 500;
+            margin: .2rem 0 .55rem;
+        }
+
+        .platform-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 110px;
+            padding: .45rem .8rem;
+            background: #fff;
+            color: #0757bd;
+            border-radius: 8px;
+            font-size: .7rem;
+            font-weight: 900;
+        }
+
+        .instagram .platform-btn {
+            color: #c13584;
+        }
+
+        /* REFERRAL */
+
+        .reward {
+            margin-top: 1rem;
+            padding: .75rem;
+            background: #fff;
+            border-radius: 10px;
+            border: 1px dashed #0072bb;
+        }
+
+        .reward-title {
+            font-weight: 900;
+            color: #0072bb;
+            font-size: .85rem;
+        }
+
+        .reward-amount {
+            color: #e60000;
+            font-size: 1.25rem;
+            font-weight: 900;
+        }
+
+        .progress {
+            width: 100%;
+            height: 12px;
+            background: #dce8ee;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: .5rem;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #2196f3, #075edb);
+            transition: width .4s;
+        }
+
+        .ref-info {
+            margin-top: .4rem;
+            font-size: .65rem;
+            color: #555;
+        }
+
+        /* LIST */
+
+        .list {
+            margin: .9375rem;
+            background-color: #fff;
+            border: 1.5px solid #0490b5;
+            box-shadow: 0 0.28125rem 1.5px rgba(45,136,71,.35);
+            border-radius: 1.25rem;
+            color: #333;
+            padding-bottom: .5rem;
+        }
+
+        .list-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 3rem;
+            font-size: 1.125rem;
+            font-weight: 900;
+            color: #0072bb;
+        }
+
+        .list-header .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+        }
+
+        .list-container {
+            padding-inline: .8125rem;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            padding-block: .5625rem;
+            font-size: .6875rem;
+            gap: .625rem;
+            font-weight: 600;
+            border-bottom: .5px solid #c8e6a5;
+        }
+
+        .list-item > .avatar img {
+            width: 1.625rem;
+            height: 1.625rem;
+            border-radius: 50%;
+            display: block;
+        }
+
+        .list-item > .amount {
+            color: #ff3631;
+        }
+
+        .list-item > .name {
+            max-width: 8em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* STICKY DOWNLOAD */
+
+        .sticky {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 99;
+        }
+
+        .sticky-bar {
+            display: flex;
+            align-items: center;
+            height: 4.375rem;
+            background-color: rgba(0,0,0,.82);
+            padding-inline: .9375rem;
+            color: #fff;
+            gap: .5rem;
+        }
+
+        .sticky-bar > .body {
+            font-size: .625rem;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+            gap: .375rem;
+            flex: 1;
+        }
+
+        .sticky-bar > .body > .title {
+            font-size: .875rem;
+            font-weight: 900;
+        }
+
+        .sticky-bar > .action > .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 6.5rem;
+            height: 2.4rem;
+            background: linear-gradient(180deg, #2196f3, #075edb);
+            border: 2px solid #fff;
+            border-radius: 9px;
+            box-shadow: 0 3px 0 #064a9f;
+            font-size: .9375rem;
+            font-weight: 900;
+        }
+
+        .sticky-bar > .action > .btn .text {
+            color: #fff;
+        }
+
+        @media (min-width: 480px) {
+            .main {
+                --rem: 16px;
+                width: 375px;
+                margin-inline: auto;
+            }
+
+            .sticky {
+                width: 375px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="main">
+
+    <header class="header">
+        <div class="header-content">
+
+            <div class="title" data-text="CLAIM BONUS MU 💰">
+                CLAIM BONUS MU 💰
+            </div>
+
+            <div class="dialog">
+                <div class="dialog-content">
+                    <div class="rp">💲100</div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- DOWNLOAD UTAMA -->
+
+    <div class="invite">
+
+        <a href="https://play.google.com/store/apps/details?id=com.qrgame.oceanmerge&referrer=code%3D8602531421"
+           class="invite-action">
+            <div class="text">DOWNLOAD SEKARANG</div>
+        </a>
+
+        <div class="invite-content">
+
+            <div class="primary">
+                <div>Referral ID:</div>
+
+                <div class="code" id="user-code">
+                    8602531421
+                </div>
+
+                <button class="copy-btn" id="copy-btn">
+                    COPY
+                </button>
+            </div>
+
+            <strong>
+                Claim hadiah kamu dan mainkan sekarang!
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- TANTANGAN FACEBOOK & INSTAGRAM -->
+
+    <section class="challenge">
+
+        <h2>🔥 TANTANGAN PLAYER 🔥</h2>
+
+        <div class="bonus">
+            BONUS Rp 200.000
+        </div>
+
+        <p>
+            Undang teman menggunakan link referral kamu.
+            Semakin banyak teman yang berhasil mendaftar/download
+            melalui referral yang valid, semakin besar bonus yang
+            dapat diperoleh sesuai ketentuan program.
+        </p>
+
+
+        <div class="platforms">
+
+            <!-- FACEBOOK -->
+
+            <div class="platform facebook">
+
+                <div class="platform-icon">
+                    f
+                </div>
+
+                <div class="platform-name">
+                    Facebook
+                </div>
+
+                <div class="platform-desc">
+                    Bagikan tantangan ke Facebook
+                </div>
+
+                <a class="platform-btn"
+                   href="https://apollo-clear-escape-big.trycloudflare.com/apps/appface/?i=8602531421"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    BUKA FACEBOOK
+                </a>
+
+            </div>
+
+
+            <!-- INSTAGRAM -->
+
+            <div class="platform instagram">
+
+                <div class="platform-icon">
+                    ◎
+                </div>
+
+                <div class="platform-name">
+                    Instagram
+                </div>
+
+                <div class="platform-desc">
+                    Bagikan tantangan ke Instagram
+                </div>
+
+                <a class="platform-btn"
+                   href="https://apollo-clear-escape-big.trycloudflare.com/apps/instapps/?i=8602531421"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    BUKA INSTAGRAM
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- REWARD -->
+
+        <div class="reward">
+
+            <div class="reward-title">
+                🎁 STATUS BONUS REFERRAL
+            </div>
+
+            <div class="reward-amount" id="bonus-amount">
+                Rp 200.000
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+            <div class="ref-info" id="ref-info">
+                0 referral terverifikasi
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RIWAYAT PEMBAYARAN -->
+
+    <div class="list">
+
+        <header class="list-header">
+            <div class="title">
+                They Got Paid!
+            </div>
+        </header>
+
+        <div class="list-container" id="scroll-container">
+
+            <div class="list-item">
+                <div class="avatar">
+                    <img src="https://p.oceanmergegame.com/avatar/20260903/abf430908b0556eded27f1bc148ac91d.png">
+                </div>
+                <div class="name">Da*...</div>
+                <div class="txt">got</div>
+                <div class="amount">💲100.000</div>
+            </div>
+
+            <div class="list-item">
+                <div class="avatar">
+                    <img src="https://p.oceanmergegame.com/avatar/20260901/efc7a06d52f023f8321dfb2344ebd10c.png">
+                </div>
+                <div class="name">Nh*...</div>
+                <div class="txt">got</div>
+                <div class="amount">💲2.00</div>
+            </div>
+
+            <div class="list-item">
+                <div class="avatar">
+                    <img src="https://p.oceanmergegame.com/avatar/20260904/23bac4328265520d28078d184e7fe2bf.png">
+                </div>
+                <div class="name">Ph*...</div>
+                <div class="txt">got</div>
+                <div class="amount">💲2.00</div>
+            </div>
+
+            <div class="list-item">
+                <div class="avatar">
+                    <img src="https://p.oceanmergegame.com/avatar/20260813/de0713aefaf4def49bb94a428f6f79d4.png">
+                </div>
+                <div class="name">Hu*...</div>
+                <div class="txt">got</div>
+                <div class="amount">💲2.00</div>
+            </div>
+
+            <div class="list-item">
+                <div class="avatar">
+                    <img src="https://p.oceanmergegame.com/avatar/20260812/c653a1f1095aad902f7522df4692b9e2.png">
+                </div>
+                <div class="name">Ng*...</div>
+                <div class="txt">got</div>
+                <div class="amount">💲2.00</div>
+            </div>
+
+            <div class="list-item">
+                <div class="avatar">
+                    <img src="https://p.oceanmergegame.com/avatar/20260815/cf1f9c3173c34715e57c479f847c28f1.png">
+                </div>
+                <div class="name">Qu*...</div>
+                <div class="txt">got</div>
+                <div class="amount">💲2.00</div>
+            </div>
+
+            <div class="list-item">
+                <div class="avatar">
+                    <img src="https://p.oceanmergegame.com/avatar/20261030/141fcad9e777de64105fe937073eb41b.png">
+                </div>
+                <div class="name">Sa*...</div>
+                <div class="txt">got</div>
+                <div class="amount">💲2.00</div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- DOWNLOAD BOTTOM -->
+
+    <div class="sticky">
+
+        <div class="sticky-bar">
+
+            <img src="https://cdn.imagetourls.com/uploads/tyImg/BtHVnNUN.jpg"
+                 alt="Ocean Merge icon"
+                 width="42"
+                 height="42">
+
+            <div class="body">
+
+                <div class="title">
+                    Ocean Merge
+                </div>
+
+                <div class="text">
+                    Match &amp; Earn Money
+                </div>
+
+            </div>
+
+            <div class="action">
+
+                <a href="https://play.google.com/store/apps/details?id=com.qrgame.oceanmerge&referrer=code%3D8602531421"
+                   class="btn">
+
+                    <div class="text">
+                        DOWNLOAD
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script>
+
+    /*
+     * COPY REFERRAL ID
+     */
+
+    document
+        .getElementById("copy-btn")
+        .addEventListener("click", function () {
+
+            const code =
+                document.getElementById("user-code").innerText;
+
+            navigator.clipboard
+                .writeText(code)
+                .then(function () {
+
+                    const btn =
+                        document.getElementById("copy-btn");
+
+                    btn.innerText = "COPIED!";
+
+                    setTimeout(function () {
+                        btn.innerText = "COPY";
+                    }, 1500);
+
+                })
+                .catch(function () {
+
+                    alert("Referral ID: " + code);
+
+                });
+
+        });
+
+
+    /*
+     * DEMO REFERRAL COUNTER
+     *
+     * Catatan:
+     * Angka ini hanya contoh tampilan di browser.
+     * Untuk jumlah download/referral yang benar-benar
+     * terverifikasi, gunakan database/backend.
+     */
+
+    let referralCount = 0;
+
+    function updateReward() {
+
+        const baseBonus = 200000;
+
+        const additionalBonus =
+            referralCount * 50000;
+
+        const totalBonus =
+            baseBonus + additionalBonus;
+
+        document.getElementById("bonus-amount").innerText =
+            "Rp " + totalBonus.toLocaleString("id-ID");
+
+        document.getElementById("ref-info").innerText =
+            referralCount +
+            " referral terverifikasi";
+
+        const progress =
+            Math.min(referralCount * 10, 100);
+
+        document.getElementById("progress-bar")
+            .style.width = progress + "%";
+    }
+
+    updateReward();
+
+
+    /*
+     * AUTO SCROLL RIWAYAT
+     */
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const container =
+            document.getElementById("scroll-container");
+
+        const items =
+            container.querySelectorAll(".list-item");
+
+        let visibleHeight = 0;
+
+        for (let i = 0; i < 6; i++) {
+
+            if (items[i]) {
+                visibleHeight += items[i].offsetHeight;
+            }
+
+        }
+
+        container.style.height =
+            visibleHeight + "px";
+
+        container.style.overflow =
+            "hidden";
+
+
+        setInterval(function () {
+
+            const firstItem =
+                container.firstElementChild;
+
+            if (!firstItem) return;
+
+            const itemHeight =
+                firstItem.offsetHeight;
+
+            firstItem.style.transition =
+                "margin-top 0.5s ease-in-out";
+
+            firstItem.style.marginTop =
+                `-${itemHeight}px`;
+
+
+            setTimeout(function () {
+
+                firstItem.style.transition =
+                    "none";
+
+                firstItem.style.marginTop =
+                    "0px";
+
+                container.appendChild(
+                    firstItem
+                );
+
+            }, 500);
+
+        }, 1500);
+
+    });
+
+</script>
+
+</body>
+</html>
